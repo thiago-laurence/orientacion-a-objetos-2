@@ -1,13 +1,17 @@
 package ar.edu.unlp.info.oo2.CodigoFinal;
 
 public class PersonaJuridica extends Persona{
-	private String cuit;
-
-	public PersonaJuridica(String nombreYApellido) {
-		super(nombreYApellido);
+	public PersonaJuridica(String nombreYApellido, String identificador) {
+		super(nombreYApellido, identificador);
+		this.setDescuento(0.15);
+	}
+	
+	public String getCuit() {
+		return (this.identificador);
 	}
 	
 	public void setCuit(String cuit) {
-		this.cuit = cuit;
+		this.identificador = cuit;
 	}
+
 }

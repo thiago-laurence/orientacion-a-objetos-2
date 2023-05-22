@@ -1,13 +1,17 @@
 package ar.edu.unlp.info.oo2.CodigoFinal;
 
 public class PersonaFisica extends Persona{
-	private String dni;
-
-	public PersonaFisica(String nombreYApellido) {
-		super(nombreYApellido);
+	
+	public PersonaFisica(String nombreYApellido, String identificador) {
+		super(nombreYApellido, identificador);
+		this.setDescuento(0);
 	}
 	
-	public void setDni(String dni) {
-		this.dni = dni;
+	public String getDocumento() {
+		return (this.identificador);
+	}
+	
+	public void setDocumento(String documento) {
+		this.identificador = documento;
 	}
 }

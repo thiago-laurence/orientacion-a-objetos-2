@@ -1,43 +1,35 @@
 package ar.edu.unlp.info.oo2.CodigoFinal;
 
-public class Llamada {
-	protected String tipoDeLlamada;
-	private String emisor;
-	private String remitente;
-	public int dur;
+public abstract class Llamada {
+	private String telefonoEmisor;
+	private String telefonoReceptor;
+	private int duracion;
 	
-	public Llamada() {
-		
-	}
-	public Llamada(String s, String p, String p2, Persoona p3, int dur) {
-		this.tipoDeLlamada = s;
-		this.emisor= p;
-		this.remitente= p2;
-		this.dur = dur;
-	}
-
-	public String getTipoDeLlamada() {
-		return tipoDeLlamada;
-	}
-
-	public void setTipoDeLlamada(String tipoDeLlamada) {
-		this.tipoDeLlamada = tipoDeLlamada;
-	}
-	public void setEmisor(String q) {
-		emisor = q;
-	}
-	public String getRemitente() {
-		return remitente;
-	}
-	public void setRemitente(String remitente) {
-		this.remitente = remitente;
+	public Llamada(String telefonoEmisor, String telefonoReceptor, int duracion) {
+		this.telefonoEmisor = telefonoEmisor;
+		this.telefonoReceptor = telefonoReceptor;
+		this.duracion = duracion;
 	}
 	
-	public void setDuracion(int duracion) {
-		this.dur = duracion;
+	public void setEmisor(String telefonoEmisor) {
+		this.telefonoEmisor = telefonoEmisor;
+	}
+	
+	public String getReceptor() {
+		return (this.telefonoReceptor);
+	}
+	
+	public void setReceptor(String telefonoReceptor) {
+		this.telefonoReceptor = telefonoReceptor;
 	}
 	
 	public int getDuracion() {
-		return (this.dur);
+		return (this.duracion);
 	}
+	
+	public void setDuracion(int duracion) {
+		this.duracion = duracion;
+	}
+	
+	public abstract double calcularCosto();
 }
