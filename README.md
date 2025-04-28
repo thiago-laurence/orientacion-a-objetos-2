@@ -1,12 +1,12 @@
 # Orientación a objetos 2
 
-Proyecto de **Design patterns** utilizando el libro "Design patterns - Elements of reusable object oriented software" - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+Proyecto de **Design patterns** utilizando como referencia el libro _"Design patterns - Elements of reusable object oriented software" - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides_.
 
 <div align="center">
   <img src="https://m.media-amazon.com/images/I/81IGFC6oFmL.jpg" alt="Design patterns" width="150">
 </div>
 
-Proyecto de **Refactoring** de código utlizando el libro "Refactoring: Improving the design of existing code" - Martin Fowler & Kent Beck.
+Proyecto de **Refactoring** de código utlizando como referencia el libro _"Refactoring: Improving the design of existing code" - Martin Fowler & Kent Beck_, y los principios _"SOLID" - Robert C. Martin_.
 
 <div align="center">
   <img src="https://m.media-amazon.com/images/I/71TGolfP8fL.jpg" alt="Refactoring" width="150">
